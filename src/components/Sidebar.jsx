@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,10 @@ export default function Sidebar() {
       {/* Button to open/close the sidebar */}
       <button
         onClick={toggleSidebar}
-        className="p-2 m-4 text-white bg-blue-500 rounded"
+        className="m-4 p-2 text-white bg-gray-700 rounded"
+        aria-label="Toggle sidebar"
       >
-        Toggle Sidebar
+        <i className="px-4 py-4 fa-xl fa-solid fa-bars"></i>
       </button>
 
       {/* Sidebar */}
@@ -24,7 +26,7 @@ export default function Sidebar() {
         }`}
       >
         <div className="p-4">
-          <h2 className="text-2xl font-semibold">Sidebar</h2>
+          <h2 className="text-2xl font-semibold">Menu</h2>
           <ul className="mt-4 space-y-2">
             <li>
               <a href="#" className="block px-2 py-1 hover:bg-gray-700 rounded">

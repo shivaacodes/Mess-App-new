@@ -28,7 +28,7 @@ export default function Sidebar() {
     <div>
       <button
         onClick={toggleSidebar}
-        className="m-4 p-2 bg-transparent text-blue-500 rounded-full border-none"
+        className="m-4 p-2 bg-transparent text-blue-900 rounded-full border-none"
         aria-label="Toggle sidebar"
       >
         <i className="fa-solid fa-bars fa-xl"></i>

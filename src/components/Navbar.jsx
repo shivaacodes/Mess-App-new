@@ -29,7 +29,7 @@ export default function Navbar({ heading }) {
           </form>
           <form role="search" onSubmit={handleLogin}>
             <button
-              className="bg-emerald-500 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-green-600"
+              className="bg-emerald-500 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600"
               type="submit"
             >
               Login

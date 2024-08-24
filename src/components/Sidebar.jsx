@@ -25,7 +25,7 @@ export default function Sidebar() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <button
         onClick={toggleSidebar}
         className="m-4 p-2 text-white bg-gray-700 rounded"
@@ -49,7 +49,7 @@ export default function Sidebar() {
                 href="#"
                 className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
               >
-                Home
+                Profile
               </a>
             </li>
             <li>
@@ -65,7 +65,7 @@ export default function Sidebar() {
                 href="#"
                 className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
               >
-                Profile
+                Mess Cut
               </a>
             </li>
             <li>
@@ -73,7 +73,7 @@ export default function Sidebar() {
                 href="#"
                 className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold "
               >
-                Contact
+                Feedback
               </a>
             </li>
           </ul>

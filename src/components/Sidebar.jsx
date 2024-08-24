@@ -42,25 +42,37 @@ export default function Sidebar() {
         }`}
       >
         <div className="p-4">
-          <h2 className="text-2xl font-semibold">Menu</h2>
+          <h2 className="text-2xl font-bold">Menu</h2>
           <ul className="mt-4 space-y-4">
             <li>
-              <a href="#" className="block px-2 py-1 hover:bg-gray-700 rounded">
+              <a
+                href="#"
+                className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="block px-2 py-1 hover:bg-gray-700 rounded">
-                About
+              <a
+                href="#"
+                className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
+              >
+                Mess Fees
               </a>
             </li>
             <li>
-              <a href="#" className="block px-2 py-1 hover:bg-gray-700 rounded">
-                Services
+              <a
+                href="#"
+                className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
+              >
+                Profile
               </a>
             </li>
             <li>
-              <a href="#" className="block px-2 py-1 hover:bg-gray-700 rounded">
+              <a
+                href="#"
+                className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold "
+              >
                 Contact
               </a>
             </li>

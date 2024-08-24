@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="bg-white-100 w-full">
       <div className="container mx-auto flex justify-between items-center p-4">
         <a className="text-3xl font-extrabold text-gray-900 font-sans">
-          Mess App
+          MessMate
         </a>
         <div className="flex space-x-4">
           <form role="search" onSubmit={handleSignup}>

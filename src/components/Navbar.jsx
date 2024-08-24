@@ -1,4 +1,10 @@
 export default function Navbar() {
+  function handleSignup(){
+    console.log("hi")
+  }
+  function handleLogin(){
+    console.log("hi")
+  }
   return (
     <nav className="bg-gray-100 w-full shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">

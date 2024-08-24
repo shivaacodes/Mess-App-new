@@ -34,7 +34,6 @@ export default function Sidebar() {
         <i className="fa-solid fa-bars fa-xl"></i>
       </button>
 
-      {/* Sidebar */}
       <div
         ref={sidebarRef}
         className={`fixed top-0 left-0 w-64 h-full bg-gray-800 text-white transition-transform duration-300 ease-in-out transform ${

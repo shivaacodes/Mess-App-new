@@ -28,10 +28,10 @@ export default function Sidebar() {
     <div>
       <button
         onClick={toggleSidebar}
-        className="m-4 p-2 text-white bg-gray-700 rounded"
+        className="m-4 p-2 bg-transparent text-blue-500 rounded-full border-none"
         aria-label="Toggle sidebar"
       >
-        <i className="px-4 py-4 fa-xl fa-solid fa-bars"></i>
+        <i className="fa-solid fa-bars fa-xl"></i>
       </button>
 
       {/* Sidebar */}

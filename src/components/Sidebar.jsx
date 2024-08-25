@@ -1,32 +1,29 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
-export default function Sidebar() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Sidebar({ isOpen, toggleSidebar }) {
   const sidebarRef = useRef(null);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-
   const handleClickOutside = (event) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-      setIsOpen(false);
+    if (
+      sidebarRef.current &&
+      !sidebarRef.current.contains(event.target) &&
+      isOpen
+    ) {
+      toggleSidebar();
     }
   };
 
   useEffect(() => {
-    // Add event listener to detect clicks outside the sidebar
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      // Cleanup the event listener
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [isOpen]);
 
   return (
-    <div className="">
+    <div>
       <button
         onClick={toggleSidebar}
         className="m-4 p-2 bg-transparent text-blue-900 rounded-full border-none"
@@ -35,7 +32,6 @@ export default function Sidebar() {
         <i className="fa-solid fa-bars fa-xl"></i>
       </button>
 
-      {/* Sidebar */}
       <div
         ref={sidebarRef}
         className={`fixed top-0 left-0 w-64 h-full bg-gray-800 text-white transition-transform duration-300 ease-in-out transform ${
@@ -47,7 +43,7 @@ export default function Sidebar() {
           <ul className="mt-4 space-y-4">
             <li>
               <Link
-                to="/" type="button"
+                to="/"
                 className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
               >
                 Profile

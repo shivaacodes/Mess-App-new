@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import {Link} from "react-router-dom"
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ export default function Sidebar() {
         <i className="fa-solid fa-bars fa-xl"></i>
       </button>
 
+      {/* Sidebar */}
       <div
         ref={sidebarRef}
         className={`fixed top-0 left-0 w-64 h-full bg-gray-800 text-white transition-transform duration-300 ease-in-out transform ${
@@ -44,24 +46,24 @@ export default function Sidebar() {
           <h2 className="text-2xl font-bold">Menu</h2>
           <ul className="mt-4 space-y-4">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/" type="button"
                 className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
               >
                 Profile
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/messfee"
                 className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
               >
                 Mess Fees
-              </a>
+              </Link>
             </li>
             <li>
               <a
-                href="#"
+                href="/messcut"
                 className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold"
               >
                 Mess Cut
@@ -69,7 +71,7 @@ export default function Sidebar() {
             </li>
             <li>
               <a
-                href="#"
+                href="/feedback"
                 className="block px-2 py-1 hover:bg-gray-700 rounded-lg font-semibold "
               >
                 Feedback

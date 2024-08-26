@@ -23,14 +23,8 @@ function App() {
           <Route path="/feedback" element={<Feedback/>}/>
         </Routes>
         </div>
-
+        
       </div>
-      {/* <div className="flex justify-end p-4 h-screen">
-        <div className="w-1/3">
-          <BillCard />
-        </div>
-      </div> */}
-
     </div>
     </>
   );

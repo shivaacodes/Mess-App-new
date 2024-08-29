@@ -29,7 +29,7 @@ const DateRangeSelector = () => {
   return (
     <div className="flex flex-col items-center p-4">
       <h2 className="text-lg font-semibold mb-4">
-        Select Date Range for mess cut 
+        Select Date Range 
       </h2>
       <DateRange
       className='rounded-3xl'
@@ -44,8 +44,8 @@ const DateRangeSelector = () => {
         minDate={currentMonth}
         maxDate={endOfMonth(nextMonth)}
       />
-      <div><h1> start date   ->>> {selectionRange.startDate.toString()}</h1>
-      <h1>end date ->>> {selectionRange.endDate.toString()}</h1></div>
+      <div><h1> start date   ---{selectionRange.startDate.toString()}</h1>
+      <h1>end date ---{selectionRange.endDate.toString()}</h1></div>
     </div>
   );
 };
